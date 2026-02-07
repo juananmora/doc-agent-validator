@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { 
-    BookOpen, 
-    ShieldCheck, 
-    Activity, 
-    Home, 
+import {
+    BookOpen,
+    ShieldCheck,
+    Activity,
+    Home,
     ChevronRight,
     Code2,
     ExternalLink
@@ -12,15 +12,15 @@ import {
 
 // Logo ">" de Accenture
 const AccentureLogo = ({ size = 20, color = "white" }) => (
-    <svg 
-        width={size} 
-        height={size} 
-        viewBox="0 0 26 34" 
+    <svg
+        width={size}
+        height={size}
+        viewBox="0 0 26 34"
         fill="none"
         style={{ display: 'inline-block', verticalAlign: 'middle' }}
     >
-        <path 
-            d="M0 0L17.5 17L0 34H8.5L26 17L8.5 0H0Z" 
+        <path
+            d="M0 0L17.5 17L0 34H8.5L26 17L8.5 0H0Z"
             fill={color}
         />
     </svg>
@@ -32,9 +32,9 @@ const Sidebar = () => {
             {/* Header with Accenture Logo */}
             <div className="sidebar-header">
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <div style={{ 
-                        width: '42px', 
-                        height: '42px', 
+                    <div style={{
+                        width: '42px',
+                        height: '42px',
                         background: 'linear-gradient(135deg, #A100FF 0%, #7a00c4 100%)',
                         borderRadius: '10px',
                         display: 'flex',
@@ -77,15 +77,15 @@ const Sidebar = () => {
                 {/* Resources Section */}
                 <div className="nav-section">
                     <small className="nav-section-title">Recursos</small>
-                    <ExternalLinkItem 
-                        href="https://github.com/accenture/doc-agent-validator" 
-                        Icon={ExternalLink} 
-                        label="Repositorio GitHub" 
+                    <ExternalLinkItem
+                        href="https://github.com/juananmora/doc-agent-validator"
+                        Icon={ExternalLink}
+                        label="Repositorio GitHub"
                     />
-                    <ExternalLinkItem 
-                        href="https://docs.github.com/en/copilot" 
-                        Icon={BookOpen} 
-                        label="Copilot Docs" 
+                    <ExternalLinkItem
+                        href="https://docs.github.com/en/copilot"
+                        Icon={BookOpen}
+                        label="Copilot Docs"
                     />
                 </div>
             </nav>
@@ -93,9 +93,9 @@ const Sidebar = () => {
             {/* Footer with User Info */}
             <div className="sidebar-footer">
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <div style={{ 
-                        width: '38px', 
-                        height: '38px', 
+                    <div style={{
+                        width: '38px',
+                        height: '38px',
                         background: 'linear-gradient(135deg, #A100FF 0%, #7a00c4 100%)',
                         borderRadius: '10px',
                         display: 'flex',
@@ -109,16 +109,16 @@ const Sidebar = () => {
                     </div>
                     <div style={{ flex: 1 }}>
                         <div style={{ fontSize: '0.9rem', fontWeight: '600', color: 'white' }}>Accenture User</div>
-                        <div style={{ 
-                            fontSize: '0.7rem', 
+                        <div style={{
+                            fontSize: '0.7rem',
                             color: 'var(--text-subtle)',
                             display: 'flex',
                             alignItems: 'center',
                             gap: '6px'
                         }}>
-                            <span style={{ 
-                                width: '6px', 
-                                height: '6px', 
+                            <span style={{
+                                width: '6px',
+                                height: '6px',
                                 background: '#10b981',
                                 borderRadius: '50%',
                                 display: 'inline-block'
@@ -127,9 +127,9 @@ const Sidebar = () => {
                         </div>
                     </div>
                 </div>
-                
+
                 {/* Quick Stats */}
-                <div style={{ 
+                <div style={{
                     marginTop: '1rem',
                     padding: '0.75rem',
                     background: 'rgba(255,255,255,0.03)',
@@ -154,13 +154,13 @@ const NavItem = ({ to, Icon, label, badge, badgeColor }) => (
         {({ isActive }) => (
             <>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <Icon 
-                        size={18} 
-                        color={isActive ? '#A100FF' : 'currentColor'} 
+                    <Icon
+                        size={18}
+                        color={isActive ? '#A100FF' : 'currentColor'}
                         strokeWidth={isActive ? 2.5 : 2}
                     />
-                    <span style={{ 
-                        fontSize: '0.9rem', 
+                    <span style={{
+                        fontSize: '0.9rem',
                         fontWeight: isActive ? '600' : '400'
                     }}>
                         {label}
@@ -181,10 +181,10 @@ const NavItem = ({ to, Icon, label, badge, badgeColor }) => (
                     )}
                 </div>
                 {isActive && (
-                    <ChevronRight 
-                        size={14} 
-                        color="#A100FF" 
-                        style={{ 
+                    <ChevronRight
+                        size={14}
+                        color="#A100FF"
+                        style={{
                             opacity: 0.8,
                             animation: 'slideIn 0.2s ease'
                         }}
@@ -201,7 +201,7 @@ const ExternalLinkItem = ({ href, Icon, label }) => (
         target="_blank"
         rel="noopener noreferrer"
         className="nav-item"
-        style={{ 
+        style={{
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
@@ -223,15 +223,15 @@ const ExternalLinkItem = ({ href, Icon, label }) => (
 
 const MiniStat = ({ label, value }) => (
     <div style={{ textAlign: 'center' }}>
-        <div style={{ 
-            fontSize: '1.1rem', 
-            fontWeight: '700', 
+        <div style={{
+            fontSize: '1.1rem',
+            fontWeight: '700',
             color: '#A100FF'
         }}>
             {value}
         </div>
-        <div style={{ 
-            fontSize: '0.65rem', 
+        <div style={{
+            fontSize: '0.65rem',
             color: 'var(--text-subtle)',
             textTransform: 'uppercase',
             letterSpacing: '0.5px'
