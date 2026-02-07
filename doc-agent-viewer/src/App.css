@@ -1,0 +1,135 @@
+/* App-specific styles - most styles are in index.css */
+
+/* Additional hover effects for cards */
+.pro-card:hover .card-icon {
+  transform: scale(1.1);
+}
+
+/* Smooth page transitions */
+.content-wrapper {
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Link cards hover state */
+a .feature-card:hover h3 {
+  color: var(--primary);
+}
+
+a .pro-card:hover h3 {
+  color: var(--primary);
+}
+
+/* Custom scrollbar for code blocks */
+pre::-webkit-scrollbar {
+  height: 6px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 3px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Table hover effects */
+table tr:hover {
+  background: rgba(161, 0, 255, 0.03);
+}
+
+/* Badge animations */
+.badge {
+  transition: all 0.2s ease;
+}
+
+.badge:hover {
+  transform: translateY(-1px);
+}
+
+/* Diagram block improvements */
+.diagram-block {
+  overflow-x: auto;
+}
+
+/* Mermaid diagram text colors */
+.diagram-block .mermaid text {
+  fill: #333 !important;
+}
+
+/* Alert icon alignment */
+.alert svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header-hero .hero-img {
+    order: -1;
+    margin-bottom: 1rem;
+  }
+  
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .content-wrapper {
+    padding: 1.5rem;
+  }
+  
+  pre {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+}
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(161, 0, 255, 0.3);
+  color: white;
+}
+
+/* Print styles */
+@media print {
+  .sidebar {
+    display: none;
+  }
+  
+  .content-area {
+    width: 100%;
+  }
+  
+  .pro-card {
+    break-inside: avoid;
+  }
+}
