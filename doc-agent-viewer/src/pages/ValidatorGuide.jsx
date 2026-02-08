@@ -34,7 +34,7 @@ const ValidatorGuide = () => {
                         una herramienta enterprise para evaluar y validar custom agents de GitHub Copilot.
                     </p>
                 </div>
-                <img src="/assets/detective.png" alt="Detective Banana" className="hero-img" style={{ borderRadius: '12px' }} />
+                <img src={`${import.meta.env.BASE_URL}assets/detective.png`} alt="Detective Banana" className="hero-img" style={{ borderRadius: '12px' }} />
             </div>
 
             {/* Table of Contents */}
@@ -571,7 +571,7 @@ y el soporte del IDE, mostrando un ejemplo con tipos.
                             <li><strong>Claridad:</strong> ¿La explicación es clara y útil?</li>
                         </ul>
                     </div>
-                    <img src="/assets/judge.png" alt="Judge Banana" style={{ width: '180px', flexShrink: 0 }} />
+                    <img src={`${import.meta.env.BASE_URL}assets/judge.png`} alt="Judge Banana" style={{ width: '180px', flexShrink: 0 }} />
                 </div>
 
                 <div style={{ 

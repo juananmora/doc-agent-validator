@@ -38,7 +38,7 @@ const CiCdProcess = () => {
                         que ningún cambio problemático llegue a producción.
                     </p>
                 </div>
-                <img src="/assets/builder.png" alt="Builder Banana" className="hero-img" style={{ borderRadius: '12px' }} />
+                <img src={`${import.meta.env.BASE_URL}assets/builder.png`} alt="Builder Banana" className="hero-img" style={{ borderRadius: '12px' }} />
             </div>
 
             {/* Quick Overview */}
@@ -108,7 +108,7 @@ const CiCdProcess = () => {
                     boxShadow: 'var(--shadow-lg)'
                 }}>
                     <img 
-                        src="/assets/workflowci.png" 
+                        src={`${import.meta.env.BASE_URL}assets/workflowci.png`} 
                         alt="Diagrama del Proceso de Validación Automática de Agentes"
                         style={{ 
                             width: '100%', 

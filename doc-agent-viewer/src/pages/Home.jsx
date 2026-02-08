@@ -217,7 +217,7 @@ const Home = () => {
                                 }}>
                                     <Shield size={26} color="#A100FF" />
                                 </div>
-                                <img src="/assets/detective.png" style={{ width: '55px', borderRadius: '50%', border: '2px solid #333' }} alt="Detective" />
+                                <img src={`${import.meta.env.BASE_URL}assets/detective.png`} style={{ width: '55px', borderRadius: '50%', border: '2px solid #333' }} alt="Detective" />
                             </div>
                             <h3 style={{ marginTop: 0, color: '#fff' }}>Validator Engine</h3>
                             <p style={{ fontSize: '0.95rem', marginBottom: '1rem' }}>
@@ -245,7 +245,7 @@ const Home = () => {
                                 }}>
                                     <Activity size={26} color="#A100FF" />
                                 </div>
-                                <img src="/assets/builder.png" style={{ width: '55px', borderRadius: '50%', border: '2px solid #333' }} alt="Builder" />
+                                <img src={`${import.meta.env.BASE_URL}assets/builder.png`} style={{ width: '55px', borderRadius: '50%', border: '2px solid #333' }} alt="Builder" />
                             </div>
                             <h3 style={{ marginTop: 0, color: '#fff' }}>CI/CD Pipeline</h3>
                             <p style={{ fontSize: '0.95rem', marginBottom: '1rem' }}>
@@ -273,7 +273,7 @@ const Home = () => {
                                 }}>
                                     <Cpu size={26} color="#A100FF" />
                                 </div>
-                                <img src="/assets/teacher.png" style={{ width: '55px', borderRadius: '50%', border: '2px solid #333' }} alt="Teacher" />
+                                <img src={`${import.meta.env.BASE_URL}assets/teacher.png`} style={{ width: '55px', borderRadius: '50%', border: '2px solid #333' }} alt="Teacher" />
                             </div>
                             <h3 style={{ marginTop: 0, color: '#fff' }}>Python SDK</h3>
                             <p style={{ fontSize: '0.95rem', marginBottom: '1rem' }}>
