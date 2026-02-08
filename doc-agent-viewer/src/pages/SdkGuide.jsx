@@ -36,7 +36,7 @@ const SdkGuide = () => {
                         Crea sesiones conversacionales, gestiona herramientas y recibe eventos en tiempo real.
                     </p>
                 </div>
-                <img src="/assets/teacher.png" alt="Teacher Banana" className="hero-img" style={{ borderRadius: '12px' }} />
+                <img src={`${import.meta.env.BASE_URL}assets/teacher.png`} alt="Teacher Banana" className="hero-img" style={{ borderRadius: '12px' }} />
             </div>
 
             {/* Quick Stats */}
