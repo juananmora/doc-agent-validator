@@ -27,17 +27,7 @@ jobs:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
           
-      - name: Clean npm environment
-        working-directory: ./doc-agent-viewer
-        run: |
-          rm -rf node_modules package-lock.json || true
-          npm cache clean --force
-        
       - name: Install dependencies
-        working-directory: ./doc-agent-viewer
-        run: npm install --registry https://registry.npmjs.org
-        
-      - name: Verify installation
         working-directory: ./doc-agent-viewer
         run: npm ci --registry https://registry.npmjs.org
         
